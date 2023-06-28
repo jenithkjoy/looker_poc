@@ -1,5 +1,5 @@
 view: employee_table {
-  sql_table_name: {{ _user_attributes['database_name'] }}.employee_table
+  sql_table_name: {{ _user_attributes['project_name'] }}.{{ _user_attributes['database_name'] }}.employee_table
     ;;
 
   dimension: age {
