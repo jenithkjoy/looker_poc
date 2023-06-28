@@ -1,5 +1,5 @@
 view: employee_table {
-  sql_table_name: halogen-shine-390609.{{ _user_attributes['database_name'] }}.employee_table
+  sql_table_name: vibrant-mind-390513.{{ _user_attributes['database_name'] }}.employee_table
     ;;
 
   dimension: age {
