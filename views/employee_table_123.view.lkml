@@ -31,4 +31,24 @@ view: employee_table_123 {
     type: count
     drill_fields: [name]
   }
+  measure: avg_salary {
+    type: average
+    sql: ${salary} ;;
+    value_format_name: usd
+  }
+  measure: median_salary {
+    type: median
+    sql: ${salary} ;;
+    value_format_name: usd
+  }
+  measure: total_salary {
+    type: sum
+    sql: ${salary} ;;
+    value_format_name: usd
+  }
+  measure: average_age {
+    type: average
+    sql: ${age} ;;
+    value_format: "0"
+  }
 }

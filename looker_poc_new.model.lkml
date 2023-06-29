@@ -18,12 +18,7 @@ include: "/views/*.view.lkml"                # include all views in the views/ f
 #     sql_on: ${users.id} = ${orders.user_id} ;;
 #   }
 # }
-explore: employee_table{
-  access_filter: {
-    field: company
-    user_attribute: company_field
-  }
-}
+
 explore: employee_table_123 {
   access_filter: {
     field: company
